@@ -24,6 +24,7 @@ class App extends Component {
                             ))}
                         </ul>
                     </section>
+                    <hr/>
                 </div>
             </div>
         )
