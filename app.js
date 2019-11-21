@@ -14,6 +14,7 @@ class App extends Component {
         }
 
         this.addItem = this.addItem.bind(this);
+        this.removeItem = this.removeItem.bind(this);
     }
 
     addItem(e) {
@@ -37,6 +38,21 @@ class App extends Component {
         }
     }
 
+    removeItem(item) {
+        const list = this.state.list.slice();
+
+        list.some((el, i) => {
+            if (el === item) {
+                list.splice(i, 1);
+                return true;
+            }
+        });
+
+        this.setState({
+            list: list
+        });
+    }
+
     render() {
         return (
             <div className="content">
@@ -45,7 +61,7 @@ class App extends Component {
                         <label className="has-text-weight-bold">List of Tasks:</label>
                         <ul>
                             {this.state.list.map(item => (
-                                <li key={item}>{item}</li>
+                                <li key={item}>{item} &nbsp;<span className="delete" onClick={() => this.removeItem(item)}></span></li>
                             ))}
                         </ul>
                     </section>
