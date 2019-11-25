@@ -59,11 +59,7 @@ class App extends Component {
                 <div className="container">
                     <section className="section">
                         <label className="has-text-weight-bold">List of Tasks:</label>
-                        <ul>
-                            {this.state.list.map(item => (
-                                <li key={item}>{item} &nbsp;<span className="delete" onClick={() => this.removeItem(item)}></span></li>
-                            ))}
-                        </ul>
+                        <List items={this.state.list} delete={this.removeItem} />
                     </section>
                     <hr />
                     <section className="section">
@@ -77,6 +73,22 @@ class App extends Component {
                     </section>
                 </div>
             </div>
+        )
+    }
+}
+
+class List extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <ul>
+                {this.props.items.map(item => (
+                    <li key={item}>{item} &nbsp;<span className="delete" onClick={() => this.props.delete(item)} /></li>
+                ))}
+            </ul>
         )
     }
 }
