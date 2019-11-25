@@ -83,6 +83,8 @@ class List extends React.Component {
         this.state = {
             filtered: []
         }
+
+        this.handleChange = this.handleChange.bind(this);
     }
 
     componentDidMount() {
@@ -97,13 +99,38 @@ class List extends React.Component {
         });
     }
 
+    handleChange(e) {
+        let currentList = [];
+        let newList = [];
+
+        if (e.target.value !== "") {
+            currentList = this.props.items;
+
+            newList = currentList.filter(item => {
+                const lc = item.toLowerCase();
+                const filter = e.target.value.toLowerCase();
+                
+                return lc.includes(filter);
+            });
+        } else {
+            newList = this.props.items;
+        }
+
+        this.setState({
+            filtered: newList
+        });
+    }
+
     render() {
         return (
-            <ul>
-                {this.props.items.map(item => (
-                    <li key={item}>{item} &nbsp;<span className="delete" onClick={() => this.props.delete(item)} /></li>
-                ))}
-            </ul>
+            <div>
+                <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
+                <ul>
+                    {this.props.items.map(item => (
+                        <li key={item}>{item} &nbsp;<span className="delete" onClick={() => this.props.delete(item)} /></li>
+                    ))}
+                </ul>
+            </div>
         )
     }
 }
