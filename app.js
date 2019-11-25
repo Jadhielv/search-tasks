@@ -126,7 +126,7 @@ class List extends React.Component {
             <div>
                 <input type="text" className="input" onChange={this.handleChange} placeholder="Search..." />
                 <ul>
-                    {this.props.items.map(item => (
+                    {this.state.filtered.map(item => (
                         <li key={item}>{item} &nbsp;<span className="delete" onClick={() => this.props.delete(item)} /></li>
                     ))}
                 </ul>
