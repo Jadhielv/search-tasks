@@ -1,13 +1,13 @@
 # To Do App in React.js
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jadhielv/search-tasks/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Jadhielv/search-tasks/blob/master/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jadhielv/search-tasks)
 [![GitHub followers](https://img.shields.io/github/followers/jadhielv.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jadhielv?tab=followers)
 [![Twitter Follow](https://img.shields.io/twitter/follow/jadhielv?style=social)](https://twitter.com/intent/follow?screen_name=jadhielv)
 
 ## Getting Started
 
-This project is a To Do App in React.js using Parcel, Babel and Bulma
+This project is a To-Do App in React.js using Parcel, Babel and Bulma
 
 ### How to Use
 
@@ -34,6 +34,14 @@ Run the project:
 ``` 
 yarn start or npm start
 ```
+
+### Preview
+
+<br/>
+
+<div align="center">
+    <img width="1095" title="To-Do App" src="assets/search-tasks.gif">
+</div>
 
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
