@@ -9,7 +9,7 @@ class App extends Component {
             list: [
                 "Go to the store",
                 "Wash the dishes",
-                "Learn som code"
+                "Learn some code"
             ]
         }
 
