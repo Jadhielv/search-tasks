@@ -45,4 +45,4 @@ yarn start or npm start
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [MIT](<https://choosealicense.com/licenses/mit/>)
+This project uses the following license: [MIT](LICENSE)
