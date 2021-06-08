@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "css-what": "^5.0.1",
     "glob-parent": "^6.0.0",
     "node-forge": "^0.10.0",
     "postcss": "^8.2.15",
