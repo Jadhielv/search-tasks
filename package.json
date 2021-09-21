@@ -9,8 +9,7 @@
     "bulma": "^0.9.1",
     "parcel": "^1.12.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "set-value": "^4.1.0"
+    "react-dom": "^16.13.1"
   },
   "scripts": {
     "start": "parcel index.html"
