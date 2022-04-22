@@ -7,7 +7,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "bulma": "^0.9.3",
-    "parcel": "^2.4.1",
+    "parcel": "^2.5.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
