@@ -39,7 +39,7 @@ yarn start or npm start
 <br/>
 
 <div align="center">
-    <img title="To-Do App" src="assets/search-tasks.gif" width="850" height="392">
+    <img title="To-Do App" src="assets/search-tasks.gif" width="800" height="392">
 </div>
 
 ## License
