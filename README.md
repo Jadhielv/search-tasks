@@ -39,10 +39,10 @@ yarn start or npm start
 <br/>
 
 <div align="center">
-    <img title="To-Do App" src="assets/search-tasks.gif" width="950" height="392">
+    <img title="To-Do App" src="assets/search-tasks.gif" width="850" height="392">
 </div>
 
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [MIT](LICENSE)
+This project uses the following license -> [MIT](LICENSE)
