@@ -8,7 +8,7 @@
     "babel-preset-react": "^6.24.1",
     "bulma": "^1.0.3",
     "parcel": "^2.14.2",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-dom": "^19.0.0"
   },
   "scripts": {
