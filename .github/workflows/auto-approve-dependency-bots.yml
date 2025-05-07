@@ -11,7 +11,7 @@ on:
 
 jobs:
   auto-approve:
-    if: github.event_name != 'pull_request_target' || github.actor == 'dependabot[bot]' || github.actor == 'depfu[bot]'
+    if: github.event_name != 'pull_request' || github.actor == 'dependabot[bot]' || github.actor == 'depfu[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Auto-approve PRs from bots
@@ -21,7 +21,7 @@ jobs:
           pull-request-number: ${{ github.event.inputs.pullRequestNumber }}
 
   auto-merge:
-    if: github.event_name != 'pull_request_target' || github.actor == 'dependabot[bot]' || github.actor == 'depfu[bot]'
+    if: github.event_name != 'pull_request' || github.actor == 'dependabot[bot]' || github.actor == 'depfu[bot]'
     needs: auto-approve
     runs-on: ubuntu-latest
     steps:
