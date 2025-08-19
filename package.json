@@ -15,7 +15,7 @@
     "start": "parcel index.html"
   },
   "devDependencies": {
-    "ansi-regex": "^6.1.0",
+    "ansi-regex": "^6.2.0",
     "babel-core": "^6.26.3",
     "css-what": "^7.0.0",
     "glob-parent": "^6.0.2",
